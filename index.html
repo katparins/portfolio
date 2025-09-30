@@ -2,6 +2,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Kat Wongsrisoontorn</title>
   <link rel="icon" type="image/png" href="./kw-logo.png">
 
@@ -13,45 +14,65 @@
 </head>
 
 <body>
-  <div class="page">
-    <header class="site-header container">
-      <a class="brand" href="#">
-        <img src="kw-logo.png" alt="KW logo" class="logo-img">
-      </a>
+  <header class="site-header container">
+    <a class="brand" href="#">
+      <img src="kw-logo.png" alt="KW logo" class="logo-img">
+    </a>
 
-      <nav class="nav">
-        <a href="#about">About me</a>
-        <a href="#work">Work</a>
-        <a href="./Kat_Wongsrisoontorn_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-        <a class="btn contact-btn" href="#contact">Get in touch!</a>
-      </nav>
+    <!-- mobile -->
+    <button class="hamburger" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
 
-    </header>
+    <!-- desktop -->
+    <nav class="nav">
+      <a href="#about">About me</a>
+      <a href="#work">Work</a>
+      <a href="./Kat_Wongsrisoontorn_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a class="btn contact-btn" href="#contact">Get in touch!</a>
+    </nav>
 
-    <main class="container intro">
-      <section class="intro-content">
-        <h1 class="intro-title">
-          <span>Hello,</span><br/>I’m Kat !</span>
-        </h1>
+  </header>
 
-        <p class="lead">
-          I design and build digital experiences that<br/>
-          blend <span class="accent-2">creativity, engineering &amp; data.</span>
-        </p>
+  <nav id="mobile-menu" class="mobile-menu" hidden>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#work">Work</a></li>
+      <li>
+        <a href="./Kat_Wongsrisoontorn_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume
+        </a>
+      </li>
+      <li><a class="contact-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-        <p class="lead">
-          I focus on <span class="accent">human-centered design &amp; tools<br/>
-          </span>that help people work more productively.
-        </p>
+  <main class="container intro">
+    <section class="intro-content">
+      <h1 class="intro-title">
+        <span>Hello,</span><br/>I’m Kat !
+      </h1>
 
-        <a class="btn view-work-btn" href="#work">View my work</a>
-      </section>
+      <p class="lead">
+        I design and build digital experiences that<br/>
+        blend <span class="accent-2">creativity, engineering &amp; data.</span>
+      </p>
 
-      <figure class="intro-graphic">
-        <img src="graphic-kat.png" alt="Kat"/>
-      </figure>
+      <p class="lead">
+        I focus on <span class="accent">human-centered design &amp; tools<br/>
+        </span>that help people work more productively.
+      </p>
 
-    </main>
-  </div>
+      <a class="btn view-work-btn" href="#work">View my work</a>
+    </section>
+
+    <figure class="intro-graphic">
+      <img src="graphic-kat.png" alt="Kat"/>
+    </figure>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
