@@ -265,7 +265,7 @@ body {
   }
 
   .intro-title {
-    font-size: clamp(4.1rem, 6vw, 5rem);
+    font-size: clamp(4rem, 6vw, 5rem);
   }
 
   .lead {
@@ -333,7 +333,7 @@ body {
     padding: 90px 20px;
   }
 
-  .contact-title { font-size: clamp(4.3rem, 6vw, 5rem); }
+  .contact-title { font-size: clamp(4rem, 6vw, 5rem); }
 
   .contact-subtitle {
     max-width: 30 ch;
