@@ -443,17 +443,18 @@ body {
     justify-content: center;
     gap: 16px;
     text-align: center;
-    margin: 0 auto 75px;
+    margin: 0 auto 80px;
     max-width: 400px;
   }
 
   .project-image {
-    width: 100%;
-    max-width: 480px;
+    display: flex;
+    justify-content: center; 
   }
 
   .project-image img {
     width: 100%;
+    max-width: 380px;
     height: auto;
     aspect-ratio: 16 / 10;
     object-fit: cover;
@@ -481,7 +482,7 @@ body {
   }
 
   .project-desc {
-    font-size: clamp(1rem, 4.2vw, 1.125rem);
+    font-size: clamp(0.5rem, 4vw, 1.125rem);
     margin: 5px auto 20px;
     max-width: 36ch;
     color: var(--text);
