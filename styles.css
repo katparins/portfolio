@@ -454,7 +454,7 @@ body {
 
   .project-image img {
     width: 100%;
-    max-width: 380px;
+    max-width: 340px;
     height: auto;
     aspect-ratio: 16 / 10;
     object-fit: cover;
