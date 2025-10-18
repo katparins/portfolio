@@ -82,13 +82,18 @@ function applyActiveFromLocation() {
     || 'index.html';
     const hash = (location.hash || '').toLowerCase();
 
-    if (isIndexPage() && (hash === '#about' || hash === '#resume' || hash === '#work')) {
+    if (isIndexPage() && (hash === '#about' || hash === '#resume')) {
         setActiveSelector(`.mobile-menu a[href="${hash}"], .nav a[href="${hash}"]`);
         return;
     }
 
     if (file === 'contact.html') {
         setActiveSelector(`.mobile-menu a[href="contact.html"], .nav a[href="contact.html"]`);
+        return;
+    }
+
+    if (file === 'work.html') {
+        setActiveSelector(`.mobile-menu a[href="work.html"], .nav a[href="work.html"]`);
         return;
     }
 

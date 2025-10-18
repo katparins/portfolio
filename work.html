@@ -14,18 +14,39 @@
 </head>
 
 <body>
-  <header class="site-header container">
-    <a class="brand" href="index.html">
-      <img src="kw-logo.png" alt="KW logo" class="logo-img">
-    </a>
+    <header class="site-header container">
+        <a class="brand" href="index.html">
+            <img src="kw-logo.png" alt="KW logo" class="logo-img">
+        </a>
+        
+        <!-- mobile -->
+        <button class="hamburger" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
 
-    <nav class="nav">
-      <a href="index.html#about">About me</a>
-      <a href="work.html" class="active">Work</a>
-      <a href="./Kat_Wongsrisoontorn_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-      <a class="btn contact-btn" href="contact.html">Get in touch!</a>
-    </nav>
-  </header>
+        <!-- desktop -->
+        <nav class="nav">
+            <a href="#about">About me</a>
+            <a href="work.html">Work</a>
+            <a href="./Kat_Wongsrisoontorn_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a class="btn contact-btn" href="contact.html">Get in touch!</a>
+        </nav>
+    </header>
+
+  <nav id="mobile-menu" class="mobile-menu" hidden>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li>
+            <a href="./Kat_Wongsrisoontorn_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume
+            </a>
+        </li>
+        <li><a class="contact-link" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
   <main class="work-section container">
     <h1 class="work-title">My Work</h1>
@@ -64,5 +85,7 @@
       </div>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
